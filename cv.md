@@ -65,3 +65,43 @@ _Time and attention to detail are the keys to solving problems of any complexity
 - [Layout designer. Start](https://prnt.sc/1010wv0)
 - [Digital marketing. Course + practice](https://prnt.sc/1011wbz)
 - [Selling video presentations](https://prnt.sc/101132b)
+
+---
+
+## Experience
+
+---
+
+### Work Experience
+
+#### Online courses web development - Student
+
+_January 2018 - to date | Ukraine_
+
+- [FruktCode](www.fructcode.com)
+- [WayUp](www.wayup.in)
+- [GoIT](www.goit.ua)
+- [freecodecamp](www.freecodecamp.org)
+
+#### Content Manager | Website Admin - Freelance
+
+_June 2011 - January 2018 | Ukraine_
+
+_Web Design | Web Developer | Website administration | Manager Marketing Specialist_
+
+- [Energy Taxi](www.energytaxi.kiev.ua)
+- [StarPom](www.starpom.pro)
+- [JustVia](www.justvia.com)
+
+#### Works not related to the IT sector - Employee
+
+_August 1998 - to date | Ukraine_
+
+- Electromechanic
+- Entrepreneur
+- Taxi driver
+- Specialist in the production of leather goods
+- Soldier
+- Seller
+- Warehouse Manager
+- Loader
