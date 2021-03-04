@@ -1,0 +1,50 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows
+# Подробная инструкция по настройке файла gitignore - https://devacademy.ru/article/ignorirovanie-faylov-i-katalogov-v-git
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows
+
+# Игнорировать каталог src
+src/ 
+
+# Игнорирование логов 
+logs 
+*.log 
+
+# Игнорирование каталога со сборкой проекта
+/dist 
+
+# Игнорирование файла содержащий переменные окружения  
+.env 
+
+# Игнорирование файлов специфичных для IDE 
+.idea/ 
+.vscode/ 
+*.sw*
