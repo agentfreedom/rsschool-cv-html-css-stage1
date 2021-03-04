@@ -119,3 +119,17 @@ _August 1998 - to date | Ukraine_
 _September 2007 - May 2013 | Ukraine_
 
 ---
+
+### Language
+
+- English - A1 (Beginner)
+- Ukrainian - C1 (Advanced)
+- Russian - C1 (Advanced)
+
+---
+
+## Copyright
+
+_Oleksandr Avdasov - Junior Front-End Developer from Kyiv_
+
+---
