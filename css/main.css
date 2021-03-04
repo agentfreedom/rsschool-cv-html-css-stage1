@@ -103,3 +103,28 @@ body {
     letter-spacing: 0.03em;
     color: rgb(36 41 46);
 }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 300px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 0;
+}
+.sect__block {
+    padding-top: 20px;
+}
+.level__descr {
+    font-size: 0.875em;
+    text-align: center;
+}
+.medium {
+    height: 0.05em;
+    padding: 0;
+    margin: 34px 0;
+    background-color: rgb(225 228 232);
+    border: 0;
+}
