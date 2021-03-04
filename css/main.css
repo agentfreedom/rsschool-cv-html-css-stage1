@@ -166,3 +166,41 @@ body {
 .data__item--span {
     font-weight: 900;
 }
+.contacts__link,
+.link {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(255 43 74);
+    transition: all 0.5s ease;
+}
+.contacts__link:hover,
+.link:hover {
+    color: #164d7a;
+    text-decoration: underline;
+}
+.summary {
+    font-style: italic;
+}
+.span__data {
+    font-size: 1.1em;
+    font-style: italic;
+}
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: rgb(108 108 108);
+}
+.copyright__text {
+    margin: 0;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.copyright__img {
+    padding-top: 5px;
+    padding-right: 2px;
+    width: 16px;
+    height: 17px;
+}
