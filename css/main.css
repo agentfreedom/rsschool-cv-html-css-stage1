@@ -128,3 +128,41 @@ body {
     background-color: rgb(225 228 232);
     border: 0;
 }
+.foto__img {
+    display: block;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.data {
+    padding-bottom: 10px;
+}
+.data__name {
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    text-align: center;
+}
+.bold {
+    height: 0.25em;
+    padding: 0;
+    background-color: rgb(225 228 232);
+    border: 0;
+    width: 50px;
+    margin: 24px auto;
+}
+.sect__title {
+    padding-bottom: 0.22em;
+    font-size: 1.65em;
+    text-align: center;
+}
+.title-blok {
+    font-size: 1.25em;
+}
+.data__list {
+    padding-left: 2em;
+}
+.data__item--span {
+    font-weight: 900;
+}
