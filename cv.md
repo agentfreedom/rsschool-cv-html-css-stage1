@@ -105,3 +105,17 @@ _August 1998 - to date | Ukraine_
 - Seller
 - Warehouse Manager
 - Loader
+
+---
+
+## Education
+
+---
+
+#### Sumy National Agrarian University
+
+##### _Management_
+
+_September 2007 - May 2013 | Ukraine_
+
+---
