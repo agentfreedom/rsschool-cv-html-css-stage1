@@ -12,8 +12,35 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <header id="header" class="container header">
-            <div class="wrapper">
+				
+					
+						<div class="container nav__container">
+							<div id="menu-burger__header" class="menu-burger__header">
+									<span></span>
+							</div>
+							<nav class="menu__body">
+								<ul class="menu menu__list">
+										<li><a  href="#about" class="menu__link">About Me</a></li>
+										<li><a  href="#skills" class="menu__link">Skills</a></li>
+										<li><a  href="#exp" class="menu__link">Experience</a></li>
+										<li><a href="#edu" class="menu__link">Education</a></li>
+										<li><a href="#lang" class="menu__link">Language</a></li>
+										<li>
+											<a data-goto="lang"  href="#lang" class="menu__link">Language 2</a>
+												<ol class="menu__sub-list">
+													<li class="menu__sub-link"><a data-goto="lang"  href="#lang" class="menu__link">Link 1</a></li>
+													<li class="menu__sub-link"><a data-goto="lang"  href="#lang" class="menu__link">Link 2</a></li>
+													<li class="menu__sub-link"><a data-goto="lang"  href="#lang" class="menu__link">Link 3</a></li>
+												</ol>
+										</li>
+										<li><a href="#lang" class="menu__link">Language 3</a></li>
+								</ul>
+							</nav>
+						</div>
+				
+				<hr class="medium" />
+        <header id="header" class="header">
+            <div class="container ">
                 <figure class="sect__block foto">
                     <img
                         class="foto__img"
