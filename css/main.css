@@ -160,6 +160,12 @@ body {
 .menu__link {
 	color: var(--color-dark);
 	font-size: 18px;
+	cursor: pointer;
+}
+.menu__link:hover {
+	text-decoration: underline;
+	font-weight: 300;
+	color: var(--color-linK);
 }
 
 .menu__sub-list {
@@ -170,8 +176,19 @@ body {
 	padding: 15px;
 	min-width: 200px;
 }
+.menu__sub-list li {
+	margin: 0 0 10px 0;
+}
+.menu__sub-list li:last-child {
+	margin: 0;
+}
 .menu__sub-link {
 	color: var(--color-light);
+}
+.menu__sub-link:hover {
+	text-decoration: underline;
+	font-weight: 300;
+	color: var(--color-gray);
 }
 
 .header {
@@ -283,5 +300,12 @@ body {
 	}
 	.menu__list > li {
 		padding: 10px 0;
+	}
+	.menu__sub-list {
+		transform: translate(0, 10px);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: all 0.3s ease 0s;
 	}
 }
