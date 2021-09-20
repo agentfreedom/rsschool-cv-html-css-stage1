@@ -6,8 +6,10 @@
 	--color-gray: #d2faf1;
 	--color-dark: #030303;
 	--color-light-dark: #353535;
+	--color-ultra-light-dark: #648e96;
 	--color-dark-red: #5e0606;
 	--color-linK: #ff2b4a;
+	--color-link-hover: #164d7a;
 	--font1: 80px;
 	--font2: 32px;
 }
@@ -143,13 +145,10 @@ body {
 
 .logo {
 	border-radius: 50%;
-	background-color: #fff;
 	position: relative;
 	z-index: 5;
-	width: 50px;
-	height: 50px;
-	padding-left: 13px;
-	padding-top: 9px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
 }
 
@@ -205,7 +204,7 @@ body {
     height: 0.05em;
     padding: 0;
     margin: 10px 0;
-    background-color: rgb(225 228 232);
+    background-color: var(--color-ultra-light-dark);
     border: 0;
 }
 .foto__img {
@@ -227,7 +226,7 @@ body {
 .bold {
     height: 0.25em;
     padding: 0;
-    background-color: rgb(225 228 232);
+    background-color: var(--color-ultra-light-dark);
     border: 0;
     width: 50px;
     margin: 24px auto;
@@ -250,13 +249,15 @@ body {
 .link {
     text-decoration: none;
     font-weight: 600;
-    color: rgb(255 43 74);
+    color: var(--color-linK);
     transition: all 0.5s ease;
 }
 .contacts__link:hover,
 .link:hover {
-    color: #164d7a;
+    color: var(--color-link-hover);
     text-decoration: underline;
+		font-weight: 600;
+    transition: all 0.5s ease;
 }
 .summary {
     font-style: italic;
@@ -279,7 +280,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.04em;
-    color: rgb(108 108 108);
+    color: var(--color-light-dark);
 }
 .copyright__text {
     margin: 0;
@@ -292,6 +293,41 @@ body {
     width: 16px;
     height: 17px;
 }
+.menu__arrow {
+	display: none;
+}
+
+
+/* --------------------------------- */
+body._pc .menu__list > li:hover .menu__sub-list {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0px, 0px);
+	pointer-events: all;
+}
+
+body._touch .menu__list > li {
+	display: flex;
+	align-items: center;
+}
+body._touch .menu__link {
+	flex: 1 1 auto;
+}
+
+body._touch .menu__arrow {
+	display: block;
+	width: 0;
+	height: 0;
+	margin: 0 0 0 5px;
+	transition: transform 0.3s ease 0s;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid var(--color-linK);
+}
+
+
+/* --------------------------------- */
+
 
 @media (min-width: 767px) {
 	.menu__list {
