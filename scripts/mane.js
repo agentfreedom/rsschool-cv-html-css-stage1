@@ -27,7 +27,8 @@ const isMobile = {
 };
 
 if (isMobile.any()) {
-	document.body.classList.add('_tourch');	
+	document.body.classList.add('_touch');
+	
 	let menuArrow = document.querySelectorAll('.menu__arrow');
 	if (menuArrow.length > 0) {
 		for (let index = 0; index < menuArrow.length; index++) {
