@@ -82,3 +82,14 @@ if (menuLinks.length > 0) {
 		}
 	}
 }
+
+//Выявления класса вызывающего нижний скрол
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
