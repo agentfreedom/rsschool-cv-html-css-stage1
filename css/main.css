@@ -295,6 +295,9 @@ body {
     font-size: 1.1em;
     font-style: italic;
 }
+.span__work{
+	color: var(--color-link-hover);
+}
 .icon__link {
 	display: block;
   width: 30%;
