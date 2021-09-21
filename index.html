@@ -9,6 +9,9 @@
             href="./img/favicon.ico"
             type="image/x-icon"
         />
+				<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+				<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+				<script>hljs.initHighlightingOnLoad();</script>
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
@@ -182,11 +185,11 @@
         <section id="exp" class="exp">
             <div class="wrapper wrapper__exp">
 							<div class="container container__exp">
-                <h2 class="sect__title">Work Experience</h2>
+                <h2 class="sect__title">Experience</h2>
                 <hr class="bold" />
                 <div class="sect__block sect__block-skills student">
                     <h3>
-                        Online courses web development - <span>Student</span>
+                        Online courses web development - <span class="span__work">Student</span>
                     </h3>
                     <p class="data">
                         <span class="span__data">January 2018 - to date</span>
@@ -234,7 +237,7 @@
                 </div>
                 <div class="sect__block sect__block-skills admin">
                     <h3>
-                        Content Manager | Website Admin - <span>Freelance</span>
+                        Content Manager | Website Admin - <span class="span__work">Freelance</span>
                     </h3>
                     <h4>
                         Web Design | Web Developer | Website administration |
@@ -293,10 +296,114 @@
                         </li>
                     </ul>
                 </div>
+
+								<div class="sect__block sect__block-skills code">
+                    <h3>
+                        Sample JS code for CV - <span class="span__work">RS School</span>
+                    </h3>
+                    <h4>
+                        Web Developer
+                    </h4>
+                    <p class="data">
+                        <span class="span__data">June 2020 - September 2021</span>
+                        |
+                        <span class="span__data">Ukraine</span>
+                    </p>
+                    <pre>
+											<code class="javascript">
+												'use strict'
+
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows());
+	}
+};
+
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+	
+	let menuArrows = document.querySelectorAll('.menu__arrow');
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index];
+			menuArrow.addEventListener('click', function (e) {
+				menuArrow.parentElement.classList.toggle('_active');
+			});
+		}
+	}
+} else {
+	document.body.classList.add('_pc');
+}
+
+//Меню бургер
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
+if (iconMenu) {
+	iconMenu.addEventListener('click', function (e) {
+		document.body.classList.toggle('_lock')
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+	
+}
+
+
+//Плавная прокрутка по клику к секции
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener('click', onMenuLinkClick);
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY- document.querySelector('.nav__container').offsetHeight;
+
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active')
+			}
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: 'smooth'
+			});
+			e.preventDefault();
+		}
+	}
+}
+
+											</code>
+										</pre>
+								</div>
+
                 <div class="sect__block sect__block-skills employer">
                     <h3>
                         Works not related to the IT sector -
-                        <span>Employer</span>
+                        <span class="span__work">Employer</span>
                     </h3>
                     <p class="data">
                         <span class="span__data">August 1998 - to date</span>
@@ -453,5 +560,6 @@
 
 				
 				<script src="./scripts/mane.js"></script>
+				<script src="./scripts/self-test.js"></script>
     </body>
 </html>
