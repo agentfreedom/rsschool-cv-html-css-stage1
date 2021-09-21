@@ -34,15 +34,15 @@
 										<li><a data-goto=".edu" href="#" class="link menu__link">Education</a></li>
 										<li><a data-goto=".lang" href="#" class="link menu__link">Language</a></li>
 										<li>
-											<a href="#" class="link menu__link">Example</a>
+											<a href="index.html" class="link menu__link">Reboot</a>
 											<span class="menu__arrow"></span>
 												<ul class="menu__sub-list">
-													<li><a href="#" class="menu__sub-link">Example 1</a></li>
-													<li><a href="#" class="menu__sub-link">Example 2</a></li>
-													<li><a href="#" class="menu__sub-link">Example 3</a></li>
+													<li><a href="index.html" class="menu__sub-link">Reboot 1</a></li>
+													<li><a href="index.html" class="menu__sub-link">Reboot 2</a></li>
+													<li><a href="index.html" class="menu__sub-link">Reboot 3</a></li>
 												</ul>
 										</li>
-										<li><a href="#lang" class="link menu__link">The End</a></li>
+										<li><a data-goto=".lang" href="#" class="link menu__link">The End</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -139,7 +139,7 @@
 									<h3 class="title-blok">Video Presentation</h3>
 								</div>
 								<div class="video">
-									<iframe class="video-iframe" src="https://www.youtube.com/embed/jI9e0hdnCp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									<object class="video-iframe" data="http://www.youtube.com/embed/3oqADsSywN8"></object>
 								</div>
 							</div>
             </div>
@@ -303,7 +303,7 @@
 
 								<div class="sect__block sect__block-skills code">
                     <h3>
-                        Sample JS code for CV - <span class="span__work">RS School</span>
+                        Sample JS code for Codewars - <span class="span__work">RS School</span>
                     </h3>
                     <h4>
                         Web Developer
@@ -313,95 +313,30 @@
                         |
                         <span class="span__data">Ukraine</span>
                     </p>
-                    <pre>
-											<code class="javascript">
-												'use strict'
-
-const isMobile = {
-	Android: function () {
-		return navigator.userAgent.match(/Android/i);
-	},
-	BlackBerry: function () {
-		return navigator.userAgent.match(/BlackBerry/i);
-	},
-	iOS: function () {
-		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-	},
-	Opera: function () {
-		return navigator.userAgent.match(/Opera Mini/i);
-	},
-	Windows: function () {
-		return navigator.userAgent.match(/IEMobile/i);
-	},
-	any: function () {
-		return (
-			isMobile.Android() ||
-			isMobile.BlackBerry() ||
-			isMobile.iOS() ||
-			isMobile.Opera() ||
-			isMobile.Windows());
-	}
-};
-
-if (isMobile.any()) {
-	document.body.classList.add('_touch');
-	
-	let menuArrows = document.querySelectorAll('.menu__arrow');
-	if (menuArrows.length > 0) {
-		for (let index = 0; index < menuArrows.length; index++) {
-			const menuArrow = menuArrows[index];
-			menuArrow.addEventListener('click', function (e) {
-				menuArrow.parentElement.classList.toggle('_active');
-			});
-		}
-	}
-} else {
-	document.body.classList.add('_pc');
+<h3 class="title-blok">Absent vowel</h3>
+<pre><code>
+function absentVowel(x){
+  let vowels = 'aeiou';
+ 
+  for (let i in vowels) {
+    if (x.toLowerCase().indexOf(vowels[i]) == -1) {
+      return Number(i);
+    }
+  }
+  
 }
-
-//Меню бургер
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.menu__body');
-if (iconMenu) {
-	iconMenu.addEventListener('click', function (e) {
-		document.body.classList.toggle('_lock')
-		iconMenu.classList.toggle('_active');
-		menuBody.classList.toggle('_active');
-	});
-	
+</code></pre>
+<h3 class="title-blok">Get the Middle Character</h3>
+<pre><code>
+function getMiddle(s)
+{
+  let middle = Math.floor(s.length / 2);
+    if (s.length % 2 == 0)
+        return s[middle - 1] + s[middle];
+    else
+        return s[middle];
 }
-
-
-//Плавная прокрутка по клику к секции
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-if (menuLinks.length > 0) {
-	menuLinks.forEach(menuLink => {
-		menuLink.addEventListener('click', onMenuLinkClick);
-	});
-
-	function onMenuLinkClick(e) {
-		const menuLink = e.target;
-		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-			const gotoBlock = document.querySelector(menuLink.dataset.goto);
-			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY- document.querySelector('.nav__container').offsetHeight;
-
-			if (iconMenu.classList.contains('_active')) {
-				document.body.classList.remove('_lock');
-				iconMenu.classList.remove('_active');
-				menuBody.classList.remove('_active')
-			}
-
-			window.scrollTo({
-				top: gotoBlockValue,
-				behavior: 'smooth'
-			});
-			e.preventDefault();
-		}
-	}
-}
-
-											</code>
-										</pre>
+</code></pre>
 								</div>
 
                 <div class="sect__block sect__block-skills employer">
