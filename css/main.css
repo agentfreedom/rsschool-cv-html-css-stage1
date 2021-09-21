@@ -133,6 +133,9 @@ body {
 	justify-content: space-between;
 	min-height: 70px;
 }
+/* .container__section {
+	width: 80%;
+} */
 .footer__container{
 	padding: 0;
 	margin: 0 auto;
@@ -141,13 +144,16 @@ body {
 	min-height: 70px;
 }
 
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
 .nav__wrapper {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
 	z-index: 10;
-	background-color: var(--color-gray);
+	/* background-color: var(--color-gray); */
 }
 
 
@@ -204,6 +210,9 @@ body {
 }
 .sect__block {
     padding-top: 20px;
+}
+.sect__block-skills > ul > li {
+	margin-left: 20px;
 }
 .level__descr {
     font-size: 0.875em;
