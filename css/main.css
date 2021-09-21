@@ -222,6 +222,7 @@ body {
 .sect__block {
     padding-top: 20px;
 }
+
 .sect__block-skills > ul > li {
 	margin-left: 20px;
 }
@@ -243,6 +244,21 @@ body {
     border-radius: 50%;
     padding: 40px 0;
     margin: 0 auto;
+}
+.video {
+	position: relative;
+  padding-bottom: 40%;
+  height: 0;
+  overflow: hidden;
+}
+.video iframe {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
 }
 .data {
     padding-bottom: 10px;
