@@ -9,17 +9,48 @@
             href="./img/favicon.ico"
             type="image/x-icon"
         />
+				<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+				<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+				<script>hljs.initHighlightingOnLoad();</script>
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <header id="header" class="container header">
-            <div class="wrapper">
-                <div class="sect__block level">
-                    <h5 class="level__descr">
-                        Junior Front-End Developer from Kyiv
-                    </h5>
-                    <hr class="medium" />
-                </div>
+				
+					<div class="wrapper nav__wrapper">
+						<div class="container nav__container">
+							<div class="logo">
+								<a href="index.html">
+									<img src="./img/favicon.ico" alt="Logo">
+								</a>
+							</div>
+							<div id="menu__icon" class="menu__icon">
+									<span></span>
+							</div>
+							<nav class="menu__body">
+								<ul class="menu menu__list">
+										<li><a data-goto=".about" href="#" class="link menu__link">About Me</a></li>
+										<li><a data-goto=".skills" href="#" class="link menu__link">Skills</a></li>
+										<li><a data-goto=".exp" href="#" class="link menu__link">Experience</a></li>
+										<li><a data-goto=".edu" href="#" class="link menu__link">Education</a></li>
+										<li><a data-goto=".lang" href="#" class="link menu__link">Language</a></li>
+										<li>
+											<a href="#" class="link menu__link">Example</a>
+											<span class="menu__arrow"></span>
+												<ul class="menu__sub-list">
+													<li><a href="#" class="menu__sub-link">Example 1</a></li>
+													<li><a href="#" class="menu__sub-link">Example 2</a></li>
+													<li><a href="#" class="menu__sub-link">Example 3</a></li>
+												</ul>
+										</li>
+										<li><a href="#lang" class="link menu__link">The End</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				
+        <header id="header" class="header">
+					<div class="wrapper header__wrapper">
+            <div class="container header__container">
                 <figure class="sect__block foto">
                     <img
                         class="foto__img"
@@ -28,13 +59,19 @@
                     />
                     <figcaption class="sect__block data">
                         <h1 class="data__name">Oleksandr Avdasov</h1>
+												<h5 class="level__descr">
+														Junior Front-End Developer from Kyiv
+												</h5>
                     </figcaption>
-                </figure>
+                </figure>  
             </div>
+					</div>
         </header>
+
         <hr class="medium" />
-        <main id="about" class="container about">
-            <div class="wrapper">
+        <main id="about" class="about">
+            <div class="wrapper wrapper__about">
+							<div class="container container__about">
                 <h2 class="sect__title">About Me</h2>
                 <hr class="bold" />
                 <div class="sect__block contacts">
@@ -61,13 +98,23 @@
                             >
                         </li>
                         <li class="data__item">
-                            <span class="data__item--span">Li:</span>
+                            <span class="data__item--span">L:</span>
                             <a
                                 class="contacts__link"
                                 href="https://www.linkedin.com/in/oleksandr-avdasov/"
                                 target="_blank"
                                 rel="nowfollow"
                                 >LinkedIn</a
+                            >
+                        </li>
+												<li class="data__item">
+                            <span class="data__item--span">G:</span>
+                            <a
+                                class="contacts__link"
+                                href="https://github.com/agentfreedom"
+                                target="_blank"
+                                rel="nowfollow"
+                                >GitHub</a
                             >
                         </li>
                     </ul>
@@ -88,14 +135,23 @@
                         to bring profit to your company.
                     </p>
                 </div>
+								<div class="sect__block">
+									<h3 class="title-blok">Video Presentation</h3>
+								</div>
+								<div class="video">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/jI9e0hdnCp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+							</div>
             </div>
         </main>
+
         <hr class="medium" />
-        <section id="skills" class="container skills">
-            <div class="wrapper">
+        <section id="skills" class="skills">
+            <div class="wrapper wrapper__skils">
+							<div class="container container__section">
                 <h2 class="sect__title">Skills</h2>
                 <hr class="bold" />
-                <div class="sect__block tech-skills">
+                <div class="sect__block sect__block-skills">
                     <h3 class="title-blok">Tech Skills</h3>
                     <ul>
                         <li>HTML5</li>
@@ -115,7 +171,7 @@
                         <li>Google Chrome Dev Tools</li>
                     </ul>
                 </div>
-                <div class="sect__block soft-skills">
+                <div class="sect__block sect__block-skills">
                     <h3 class="title-blok">Soft Skills</h3>
                     <ul>
                         <li>Agile</li>
@@ -125,84 +181,19 @@
                         <li>Trello</li>
                     </ul>
                 </div>
-                <div class="sect__block certificates">
-                    <h3 class="title-blok">Certificates</h3>
-                    <ul>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1011031"
-                                target="_blank"
-                                rel="nowfollow"
-                                >HTML/CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010xup"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Bootstrap</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/10111at"
-                                target="_blank"
-                                rel="nowfollow"
-                                >PHP/MySql</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010ysv"
-                                target="_blank"
-                                rel="nowfollow"
-                                >HTML + English</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010wv0"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Layout designer. Start</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1011wbz"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Digital marketing. Course + practice</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/101132b"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Selling video presentations</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
+							</div>
+						</div>
         </section>
+
         <hr class="medium" />
-        <section id="exp" class="container exp">
-            <div class="wrapper">
-                <h2 class="sect__title">Work Experience</h2>
+        <section id="exp" class="exp">
+            <div class="wrapper wrapper__exp">
+							<div class="container container__exp">
+                <h2 class="sect__title">Experience</h2>
                 <hr class="bold" />
-                <div class="sect__block student">
+                <div class="sect__block sect__block-skills student">
                     <h3>
-                        Online courses web development - <span>Student</span>
+                        Online courses web development - <span class="span__work">Student</span>
                     </h3>
                     <p class="data">
                         <span class="span__data">January 2018 - to date</span>
@@ -248,9 +239,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sect__block admin">
+                <div class="sect__block sect__block-skills admin">
                     <h3>
-                        Content Manager | Website Admin - <span>Freelance</span>
+                        Content Manager | Website Admin - <span class="span__work">Freelance</span>
                     </h3>
                     <h4>
                         Web Design | Web Developer | Website administration |
@@ -309,10 +300,114 @@
                         </li>
                     </ul>
                 </div>
-                <div class="sect__block employer">
+
+								<div class="sect__block sect__block-skills code">
+                    <h3>
+                        Sample JS code for CV - <span class="span__work">RS School</span>
+                    </h3>
+                    <h4>
+                        Web Developer
+                    </h4>
+                    <p class="data">
+                        <span class="span__data">June 2020 - September 2021</span>
+                        |
+                        <span class="span__data">Ukraine</span>
+                    </p>
+                    <pre>
+											<code class="javascript">
+												'use strict'
+
+const isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows());
+	}
+};
+
+if (isMobile.any()) {
+	document.body.classList.add('_touch');
+	
+	let menuArrows = document.querySelectorAll('.menu__arrow');
+	if (menuArrows.length > 0) {
+		for (let index = 0; index < menuArrows.length; index++) {
+			const menuArrow = menuArrows[index];
+			menuArrow.addEventListener('click', function (e) {
+				menuArrow.parentElement.classList.toggle('_active');
+			});
+		}
+	}
+} else {
+	document.body.classList.add('_pc');
+}
+
+//Меню бургер
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
+if (iconMenu) {
+	iconMenu.addEventListener('click', function (e) {
+		document.body.classList.toggle('_lock')
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+	
+}
+
+
+//Плавная прокрутка по клику к секции
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+	menuLinks.forEach(menuLink => {
+		menuLink.addEventListener('click', onMenuLinkClick);
+	});
+
+	function onMenuLinkClick(e) {
+		const menuLink = e.target;
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+			const gotoBlock = document.querySelector(menuLink.dataset.goto);
+			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY- document.querySelector('.nav__container').offsetHeight;
+
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active')
+			}
+
+			window.scrollTo({
+				top: gotoBlockValue,
+				behavior: 'smooth'
+			});
+			e.preventDefault();
+		}
+	}
+}
+
+											</code>
+										</pre>
+								</div>
+
+                <div class="sect__block sect__block-skills employer">
                     <h3>
                         Works not related to the IT sector -
-                        <span>Employer</span>
+                        <span class="span__work">Employer</span>
                     </h3>
                     <p class="data">
                         <span class="span__data">August 1998 - to date</span>
@@ -330,65 +425,145 @@
                         <li>Loader</li>
                     </ul>
                 </div>
+							</div>
             </div>
         </section>
-        <hr class="medium" />
-        <section id="edu" class="container edu">
-            <div class="wrapper">
+
+				<hr class="medium" />
+				<section id="edu" class="edu">
+          <div class="wrapper edu__wrapper">
+            <div class="container edu__container">
                 <h2 class="sect__title">Education</h2>
                 <hr class="bold" />
-                <div class="sect__block">
-                    <h3>Sumy National Agrarian University</h3>
-                    <h4>Management</h4>
-                    <p class="data">
-                        <span class="span__data"
-                            >September 2007 - May 2013</span
-                        >
-                        |
-                        <span class="span__data">Ukraine</span>
-                    </p>
-                </div>
-            </div>
+									<div class="sect__block sect__block-skills">
+											<h3>Sumy National Agrarian University</h3>
+											<h4>Management</h4>
+											<p class="data">
+													<span class="span__data"
+															>September 2007 - May 2013</span
+													>
+													|
+													<span class="span__data">Ukraine</span>
+											</p>
+									</div>
+									<div class="sect__block sect__block-skills certificates">
+										<h3 class="title-blok">Certificates</h3>
+										<ul>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1011031"
+																target="_blank"
+																rel="nowfollow"
+																>HTML/CSS</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010xup"
+																target="_blank"
+																rel="nowfollow"
+																>Bootstrap</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/10111at"
+																target="_blank"
+																rel="nowfollow"
+																>PHP/MySql</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010ysv"
+																target="_blank"
+																rel="nowfollow"
+																>HTML + English</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010wv0"
+																target="_blank"
+																rel="nowfollow"
+																>Layout designer. Start</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1011wbz"
+																target="_blank"
+																rel="nowfollow"
+																>Digital marketing. Course + practice</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/101132b"
+																target="_blank"
+																rel="nowfollow"
+																>Selling video presentations</a
+														>
+												</li>
+										</ul>
+									</div>
+						</div>
+          </div>
         </section>
+
         <hr class="medium" />
-        <section id="lang" class="container lang">
-            <div class="wrapper">
-                <h2 class="sect__title">Language</h2>
-                <hr class="bold" />
-                <div class="sect__block">
-                    <ul>
-                        <li>English - A1 (Beginner)</li>
-                        <li>Ukrainian - C1 (Advanced)</li>
-                        <li>Russian - C1 (Advanced)</li>
-                    </ul>
-                </div>
-            </div>
+        <section id="lang" class="lang">
+            <div class="wrapper lang__wrapper">
+							<div class="container lang__container">
+									<h2 class="sect__title">Language</h2>
+									<hr class="bold" />
+									<div class="sect__block sect__block-skills">
+											<ul>
+													<li>English - A1 (Beginner)</li>
+													<li>Ukrainian - C1 (Advanced)</li>
+													<li>Russian - C1 (Advanced)</li>
+											</ul>
+									</div>
+							</div>
+						</div>	
         </section>
+
         <hr class="medium" />
-        <footer id="footer" class="container footer">
-            <div class="wrapper">
+        <footer id="footer" class="footer">
+					<div class="wrapper footer__wrapper">
+            <div class="container footer__container">
+							<div class="soc__img">
+								<a href="https://github.com/agentfreedom" target="_blank" rel="nowfollow"><img class="icon__link" src="img/github_logo-300.png" alt="github logo"></a>
+							</div>
 
 							<div class="soc__img">
-								<a href="https://github.com/agentfreedom" target="_blank" rel="nowfollow"><img class="icon__link" src="img/github_logo.png" alt="github logo"></a>
+								<a href="https://rs.school/js/" target="_blank" rel="nowfollow"><img class="icon__link" src="img/logo-rsschool-300.png" alt="RS. School logo"></a>
 							</div>
+						</div>
+          </div>
+					<hr class="medium" />
+					<div id="copyright" class="copyright">
+						<p class="copyright__text">
+								<img
+										class="copyright__img"
+										src="./img/copyright.png"
+										alt="Copyright"
+								/>
+								Oleksandr Avdasov - Junior Front-End Developer from
+								Kyiv.
+						</p>
+					</div>
+				</footer>
 
-							<div class="copyright">
-									<p class="copyright__text">
-											<img
-													class="copyright__img"
-													src="./img/copyright.png"
-													alt="Copyright"
-											/>
-											Oleksandr Avdasov - Junior Front-End Developer from
-											Kyiv.
-									</p>
-							</div>
-
-							<div class="soc__img">
-								<a href="https://rs.school/js/" target="_blank" rel="nowfollow"><img class="icon__link" src="img/rs_school_js.svg" alt="RS. School logo"></a>
-							</div>
-							
-            </div>
-        </footer>
+				
+				<script src="./scripts/mane.js"></script>
+				<script src="./scripts/self-test.js"></script>
     </body>
 </html>
