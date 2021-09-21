@@ -20,23 +20,23 @@
 									<img src="./img/favicon.ico" alt="Logo">
 								</a>
 							</div>
-							<div id="menu-burger__header" class="menu-burger__header">
+							<div id="menu__icon" class="menu__icon">
 									<span></span>
 							</div>
 							<nav class="menu__body">
 								<ul class="menu menu__list">
-										<li><a  href="#about" class="link menu__link">About Me</a></li>
-										<li><a  href="#skills" class="link menu__link">Skills</a></li>
-										<li><a  href="#exp" class="link menu__link">Experience</a></li>
-										<li><a href="#edu" class="link menu__link">Education</a></li>
-										<li><a href="#lang" class="link menu__link">Language</a></li>
+										<li><a data-goto=".about" href="#" class="link menu__link">About Me</a></li>
+										<li><a data-goto=".skills" href="#" class="link menu__link">Skills</a></li>
+										<li><a data-goto=".exp" href="#" class="link menu__link">Experience</a></li>
+										<li><a data-goto=".edu" href="#" class="link menu__link">Education</a></li>
+										<li><a data-goto=".lang" href="#" class="link menu__link">Language</a></li>
 										<li>
-											<a data-goto="lang"  href="#lang" class="link menu__link">Language 2</a>
+											<a data-goto=".lang"  href="#" class="link menu__link">Language 2</a>
 											<span class="menu__arrow"></span>
 												<ul class="menu__sub-list">
-													<li><a href="#lang" class="menu__sub-link">Link 1</a></li>
-													<li><a href="#lang" class="menu__sub-link">Link 2</a></li>
-													<li><a href="#lang" class="menu__sub-link">Link 3</a></li>
+													<li><a data-goto=".lang" href="#" class="menu__sub-link">Link 1</a></li>
+													<li><a data-goto=".lang" href="#" class="menu__sub-link">Link 2</a></li>
+													<li><a data-goto=".lang" href="#" class="menu__sub-link">Link 3</a></li>
 												</ul>
 										</li>
 										<li><a href="#lang" class="link menu__link">Language 3</a></li>
@@ -177,9 +177,11 @@
 							</div>
 						</div>
         </section>
+
         <hr class="medium" />
-        <section id="exp" class="container exp">
-            <div class="wrapper">
+        <section id="exp" class="exp">
+            <div class="wrapper wrapper__exp">
+							<div class="container container__exp">
                 <h2 class="sect__title">Work Experience</h2>
                 <hr class="bold" />
                 <div class="sect__block sect__block-skills student">
@@ -312,112 +314,120 @@
                         <li>Loader</li>
                     </ul>
                 </div>
+							</div>
             </div>
         </section>
-        <hr class="medium" />
-        <section id="edu" class="container edu">
-            <div class="wrapper edu__wrapper">
+
+				<hr class="medium" />
+				<section id="edu" class="edu">
+          <div class="wrapper edu__wrapper">
+            <div class="container edu__container">
                 <h2 class="sect__title">Education</h2>
                 <hr class="bold" />
-                <div class="sect__block sect__block-skills">
-                    <h3>Sumy National Agrarian University</h3>
-                    <h4>Management</h4>
-                    <p class="data">
-                        <span class="span__data"
-                            >September 2007 - May 2013</span
-                        >
-                        |
-                        <span class="span__data">Ukraine</span>
-                    </p>
-                </div>
-            </div>
-						<div class="sect__block sect__block-skills certificates">
-                    <h3 class="title-blok">Certificates</h3>
-                    <ul>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1011031"
-                                target="_blank"
-                                rel="nowfollow"
-                                >HTML/CSS</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010xup"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Bootstrap</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/10111at"
-                                target="_blank"
-                                rel="nowfollow"
-                                >PHP/MySql</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010ysv"
-                                target="_blank"
-                                rel="nowfollow"
-                                >HTML + English</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1010wv0"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Layout designer. Start</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/1011wbz"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Digital marketing. Course + practice</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="contacts__link"
-                                href="https://prnt.sc/101132b"
-                                target="_blank"
-                                rel="nowfollow"
-                                >Selling video presentations</a
-                            >
-                        </li>
-                    </ul>
-                </div>
+									<div class="sect__block sect__block-skills">
+											<h3>Sumy National Agrarian University</h3>
+											<h4>Management</h4>
+											<p class="data">
+													<span class="span__data"
+															>September 2007 - May 2013</span
+													>
+													|
+													<span class="span__data">Ukraine</span>
+											</p>
+									</div>
+									<div class="sect__block sect__block-skills certificates">
+										<h3 class="title-blok">Certificates</h3>
+										<ul>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1011031"
+																target="_blank"
+																rel="nowfollow"
+																>HTML/CSS</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010xup"
+																target="_blank"
+																rel="nowfollow"
+																>Bootstrap</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/10111at"
+																target="_blank"
+																rel="nowfollow"
+																>PHP/MySql</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010ysv"
+																target="_blank"
+																rel="nowfollow"
+																>HTML + English</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1010wv0"
+																target="_blank"
+																rel="nowfollow"
+																>Layout designer. Start</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/1011wbz"
+																target="_blank"
+																rel="nowfollow"
+																>Digital marketing. Course + practice</a
+														>
+												</li>
+												<li>
+														<a
+																class="contacts__link"
+																href="https://prnt.sc/101132b"
+																target="_blank"
+																rel="nowfollow"
+																>Selling video presentations</a
+														>
+												</li>
+										</ul>
+									</div>
+						</div>
+          </div>
         </section>
-        <hr class="medium" />
-        <section id="lang" class="container lang">
-            <div class="wrapper">
-                <h2 class="sect__title">Language</h2>
-                <hr class="bold" />
-                <div class="sect__block sect__block-skills">
-                    <ul>
-                        <li>English - A1 (Beginner)</li>
-                        <li>Ukrainian - C1 (Advanced)</li>
-                        <li>Russian - C1 (Advanced)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr class="medium" />
-        <footer id="footer" class="footer footer__wrapper">
-            <div class="container footer__container">
 
+        <hr class="medium" />
+        <section id="lang" class="lang">
+            <div class="wrapper lang__wrapper">
+							<div class="container lang__container">
+									<h2 class="sect__title">Language</h2>
+									<hr class="bold" />
+									<div class="sect__block sect__block-skills">
+											<ul>
+													<li>English - A1 (Beginner)</li>
+													<li>Ukrainian - C1 (Advanced)</li>
+													<li>Russian - C1 (Advanced)</li>
+											</ul>
+									</div>
+							</div>
+						</div>	
+        </section>
+
+        <hr class="medium" />
+        <footer id="footer" class="footer">
+					<div class="wrapper footer__wrapper">
+            <div class="container footer__container">
 							<div class="soc__img">
 								<a href="https://github.com/agentfreedom" target="_blank" rel="nowfollow"><img class="icon__link" src="img/github_logo-300.png" alt="github logo"></a>
 							</div>
@@ -425,22 +435,23 @@
 							<div class="soc__img">
 								<a href="https://rs.school/js/" target="_blank" rel="nowfollow"><img class="icon__link" src="img/logo-rsschool-300.png" alt="RS. School logo"></a>
 							</div>
-							
-            </div>
+						</div>
+          </div>
+					<hr class="medium" />
+					<div id="copyright" class="copyright">
+						<p class="copyright__text">
+								<img
+										class="copyright__img"
+										src="./img/copyright.png"
+										alt="Copyright"
+								/>
+								Oleksandr Avdasov - Junior Front-End Developer from
+								Kyiv.
+						</p>
+					</div>
+				</footer>
 
-						<hr class="medium" />
-						<div class="copyright">
-									<p class="copyright__text">
-											<img
-													class="copyright__img"
-													src="./img/copyright.png"
-													alt="Copyright"
-											/>
-											Oleksandr Avdasov - Junior Front-End Developer from
-											Kyiv.
-									</p>
-							</div>
-        </footer>
+				
 				<script src="./scripts/mane.js"></script>
     </body>
 </html>
