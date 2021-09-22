@@ -245,7 +245,7 @@ body {
     padding: 40px 0;
     margin: 0 auto;
 }
-.video {
+/* .video {
 	position: relative;
   padding-bottom: 40%;
   height: 0;
@@ -259,6 +259,14 @@ body {
   height: 100%;
   border-width: 0;
   outline-width: 0;
+} */
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.video-iframe {
+	border: 0;
 }
 
 .data {
